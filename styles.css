@@ -56,3 +56,9 @@ span {
 #no-btn {
   background-color: red;
 }
+
+img {
+  padding: 20px;
+  height: 300px;
+  width: 300px;
+}

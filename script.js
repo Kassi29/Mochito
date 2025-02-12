@@ -8,6 +8,7 @@ const texts = [
 let cont = 0;
 let scaleFactor = 1;
 let scaleFactorNo = 1;
+let url = "/gifs/yes.gif";
 const speed = 100;
 const initialText = document.getElementById("initial-text");
 const textElement = document.getElementById("typing");
@@ -94,13 +95,19 @@ function omgHeSaidYes() {
 
   const div1 = document.createElement("div");
   if (cont != 0) {
+    url = "/gifs/cochi.gif";
     const div2 = document.createElement("div");
     div2.textContent =
-      "I always knew you click YES on the fisrt time ( actually " +
+      "I always knew you click YES on the fisrt time (" +
       cont +
-      " times) MOCHI COooCHI";
+      " times) MOCHI COOOCHI";
     initialText.append(div2);
   }
+  const gif = document.createElement("img");
+  gif.setAttribute("src", url);
+  gif.setAttribute("alt", "U and I");
+
+  initialText.append(gif);
 
   div1.textContent = "SEE U ON AVAROA SQUARE AT 4.59 THIS FRIDAY ";
 
@@ -109,7 +116,7 @@ function omgHeSaidYes() {
 
 function cochi() {
   cont++;
-  console.log("Each time u click No a kitty dies: ", cont);
+  console.log("Each time u click No, a kitty dies: ", cont);
   scaleFactor += 0.3;
   scaleFactorNo -= 0.1;
   const yes = document.getElementById("yes-btn");
@@ -120,9 +127,9 @@ function cochi() {
   no.style.transform = `scale(${scaleFactorNo})`;
   no.style.transition = "transform 0.2s";
 }
+buttons();
 
-//buttons();
-setTimeout(xD, 100);
-setTimeout(startTyping, 90);
-setTimeout(valentine, 11000);
-setTimeout(buttons, 12000);
+// setTimeout(xD, 100);
+// setTimeout(startTyping, 90);
+// setTimeout(valentine, 11000);
+// setTimeout(buttons, 12000);
