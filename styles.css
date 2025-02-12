@@ -11,7 +11,7 @@ body {
 }
 /* it's black because, my eyeeeees */
 
-.initial-text {
+#initial-text {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,4 +24,5 @@ body {
   padding-right: 5px;
   white-space: nowrap;
   overflow: hidden;
+  width: 100%;
 }
