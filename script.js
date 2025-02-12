@@ -94,24 +94,33 @@ function omgHeSaidYes() {
   }
 
   const div1 = document.createElement("div");
+  const div3 = document.createElement("div");
   if (cont != 0) {
     url = "/gifs/cochi.gif";
     const div2 = document.createElement("div");
     div2.textContent =
-      "I always knew you click YES on the fisrt time (" +
+      "I always knew you click YES on the first time (" +
       cont +
       " times) MOCHI COOOCHI";
+    div2.setAttribute("class", "final-text");
     initialText.append(div2);
   }
   const gif = document.createElement("img");
   gif.setAttribute("src", url);
   gif.setAttribute("alt", "U and I");
 
+  div3.textContent = "Te amo vidita mia ";
+  div3.setAttribute("class", "te-amo");
+  initialText.appendChild(div3);
+
   initialText.append(gif);
 
   div1.textContent = "SEE U ON AVAROA SQUARE AT 4.59 THIS FRIDAY ";
+  div1.setAttribute("class", "final-text");
 
   initialText.appendChild(div1);
+
+  console.log("tao");
 }
 
 function cochi() {
@@ -127,9 +136,9 @@ function cochi() {
   no.style.transform = `scale(${scaleFactorNo})`;
   no.style.transition = "transform 0.2s";
 }
-buttons();
 
-// setTimeout(xD, 100);
-// setTimeout(startTyping, 90);
-// setTimeout(valentine, 11000);
-// setTimeout(buttons, 12000);
+console.log("ola");
+setTimeout(xD, 100);
+setTimeout(startTyping, 90);
+setTimeout(valentine, 11000);
+setTimeout(buttons, 12000);
