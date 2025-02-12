@@ -6,6 +6,8 @@ const texts = [
 ];
 
 let cont = 0;
+let scaleFactor = 1;
+let scaleFactorNo = 1;
 const speed = 100;
 const initialText = document.getElementById("initial-text");
 const textElement = document.getElementById("typing");
@@ -80,6 +82,7 @@ function buttons() {
   div.appendChild(button2);
 
   button1.addEventListener("click", omgHeSaidYes);
+  button2.addEventListener("click", cochi);
 
   initialText.appendChild(div);
 }
@@ -102,6 +105,20 @@ function omgHeSaidYes() {
   div1.textContent = "SEE U ON AVAROA SQUARE AT 4.59 THIS FRIDAY ";
 
   initialText.appendChild(div1);
+}
+
+function cochi() {
+  cont++;
+  console.log("Each time u click No a kitty dies: ", cont);
+  scaleFactor += 0.3;
+  scaleFactorNo -= 0.1;
+  const yes = document.getElementById("yes-btn");
+  const no = document.getElementById("no-btn");
+  yes.style.transform = `scale(${scaleFactor})`;
+  yes.style.transition = "transform 0.2s";
+
+  no.style.transform = `scale(${scaleFactorNo})`;
+  no.style.transition = "transform 0.2s";
 }
 
 //buttons();
