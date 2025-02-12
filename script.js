@@ -5,6 +5,7 @@ const texts = [
   "u want to be... my...my",
 ];
 
+let cont = 0;
 const speed = 100;
 const initialText = document.getElementById("initial-text");
 const textElement = document.getElementById("typing");
@@ -78,7 +79,29 @@ function buttons() {
   div.appendChild(button1);
   div.appendChild(button2);
 
+  button1.addEventListener("click", omgHeSaidYes);
+
   initialText.appendChild(div);
+}
+
+function omgHeSaidYes() {
+  while (initialText.firstChild) {
+    initialText.removeChild(initialText.firstChild);
+  }
+
+  const div1 = document.createElement("div");
+  if (cont != 0) {
+    const div2 = document.createElement("div");
+    div2.textContent =
+      "I always knew you click YES on the fisrt time ( actually " +
+      cont +
+      " times) MOCHI COooCHI";
+    initialText.append(div2);
+  }
+
+  div1.textContent = "SEE U ON AVAROA SQUARE AT 4.59 THIS FRIDAY ";
+
+  initialText.appendChild(div1);
 }
 
 //buttons();
