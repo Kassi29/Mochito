@@ -8,7 +8,7 @@ const texts = [
 let cont = 0;
 let scaleFactor = 1;
 let scaleFactorNo = 1;
-let url = "/gifs/yes.gif";
+let url = "./gifs/yes.gif";
 const speed = 100;
 const initialText = document.getElementById("initial-text");
 const textElement = document.getElementById("typing");
@@ -96,7 +96,7 @@ function omgHeSaidYes() {
   const div1 = document.createElement("div");
   const div3 = document.createElement("div");
   if (cont != 0) {
-    url = "/gifs/cochi.gif";
+    url = "./gifs/cochi.gif";
     const div2 = document.createElement("div");
     div2.textContent =
       "I always knew you click YES on the first time (" +
