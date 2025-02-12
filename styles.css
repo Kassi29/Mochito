@@ -1,4 +1,27 @@
 body {
+  font-family: "Roboto";
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
   background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /* it's black because, my eyeeeees */
+
+.initial-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  color: aquamarine;
+}
+
+#typing {
+  border-right: 2px solid aquamarine;
+  padding-right: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+}
