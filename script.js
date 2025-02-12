@@ -1,8 +1,8 @@
 const texts = [
   "I was wandering if you...",
-  "if you want to...",
-  "goo.. if u want of course..",
-  "u want to go with me...to",
+  "..u know.. if you want to...",
+  ".. if u want of course..",
+  "u want to be... my...my",
 ];
 
 const speed = 100;
@@ -13,7 +13,22 @@ function xD() {
   textElement.remove();
 }
 
-//que asco as recursivas pero me sirven xd
+function valentine() {
+  const textElement = document.createElement("span");
+  initialText.appendChild(textElement);
+
+  const txt = "MY VALENTINE?";
+  let i = 0;
+
+  function typing() {
+    if (i < txt.length) {
+      textElement.textContent += txt.charAt(i);
+      i++;
+      setTimeout(typing, 50);
+    }
+  }
+  typing();
+}
 
 function typeText(txt, textElement, callback) {
   let i = 0;
@@ -48,4 +63,5 @@ function startTyping() {
 }
 
 setTimeout(xD, 100);
-setTimeout(startTyping, 100);
+setTimeout(startTyping, 90);
+setTimeout(valentine, 11000);
