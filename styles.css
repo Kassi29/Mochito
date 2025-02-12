@@ -28,6 +28,31 @@ body {
 }
 
 span {
-  font-size: 50px;
+  font-size: 70px;
   color: palevioletred;
+  padding: 10px;
+}
+
+#buttons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding: 10px;
+}
+
+#yes-btn,
+#no-btn {
+  color: white;
+  padding: 15px;
+  border: 0;
+  border-radius: 9px;
+}
+#yes-btn {
+  font-size: 50px;
+  background-color: blueviolet;
+}
+
+#no-btn {
+  font-size: 7px;
+  background-color: red;
 }

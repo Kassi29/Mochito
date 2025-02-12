@@ -62,6 +62,27 @@ function startTyping() {
   typeNextLine();
 }
 
+function buttons() {
+  const div = document.createElement("div");
+  div.setAttribute("id", "buttons");
+
+  const button1 = document.createElement("button");
+  const button2 = document.createElement("button");
+
+  button1.textContent = "YES";
+  button2.textContent = "NO";
+
+  button1.setAttribute("id", "yes-btn");
+  button2.setAttribute("id", "no-btn");
+
+  div.appendChild(button1);
+  div.appendChild(button2);
+
+  initialText.appendChild(div);
+}
+
+//buttons();
 setTimeout(xD, 100);
 setTimeout(startTyping, 90);
 setTimeout(valentine, 11000);
+setTimeout(buttons, 12000);
